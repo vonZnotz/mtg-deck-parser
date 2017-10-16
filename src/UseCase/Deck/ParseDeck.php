@@ -8,7 +8,7 @@ use vonZnotz\MtgDeckParser\UseCase\Deck\Response\ParseDeckResponse;
 
 class ParseDeck extends AbstractUseCase
 {
-    public function run(ParseDeckRequest $request, ParseDeckResponse $response): ResponseInterface
+    public function run(ParseDeckRequest $request, ParseDeckResponse $response): ParseDeckResponse
     {
         return $response;
     }
