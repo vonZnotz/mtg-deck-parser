@@ -2,7 +2,7 @@
 
 namespace vonZnotz\MtgDeckParser\UseCase\Deck;
 
-use vonZnotz\MtgDeckParser\Service\DeckCollection;
+use vonZnotz\MtgDeckParser\Service\Deck\DeckCollection;
 use vonZnotz\MtgDeckParser\UseCase\AbstractUseCase;
 use vonZnotz\MtgDeckParser\UseCase\Deck\Request\ParseDeckRequest;
 use vonZnotz\MtgDeckParser\UseCase\Deck\Response\ParseDeckResponse;

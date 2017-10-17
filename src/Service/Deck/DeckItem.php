@@ -1,6 +1,6 @@
 <?php
 
-namespace vonZnotz\MtgDeckParser\UseCase\Deck;
+namespace vonZnotz\MtgDeckParser\Service\Deck;
 
 class DeckItem
 {

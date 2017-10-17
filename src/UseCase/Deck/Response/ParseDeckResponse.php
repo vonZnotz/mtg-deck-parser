@@ -2,7 +2,8 @@
 
 namespace vonZnotz\MtgDeckParser\UseCase\Deck\Response;
 
-use vonZnotz\MtgDeckParser\Service\DeckCollection;
+
+use vonZnotz\MtgDeckParser\Service\Deck\DeckCollection;
 
 class ParseDeckResponse
 {
