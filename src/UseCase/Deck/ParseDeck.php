@@ -11,8 +11,6 @@ class ParseDeck extends AbstractUseCase
 {
     public function run(ParseDeckRequest $request, ParseDeckResponse $response): ParseDeckResponse
     {
-        $deckCollection = new DeckCollection();
-        $response->setDeckCollection($deckCollection);
         return $response;
     }
 }
