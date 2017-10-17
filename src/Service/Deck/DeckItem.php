@@ -16,7 +16,7 @@ class DeckItem
     /**
      * @return int
      */
-    public function getMultiverseId(): int
+    public function getMultiverseId():? int
     {
         return $this->multiverseId;
     }
@@ -32,7 +32,7 @@ class DeckItem
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName():? string
     {
         return $this->name;
     }
@@ -48,7 +48,7 @@ class DeckItem
     /**
      * @return string
      */
-    public function getLanguage(): string
+    public function getLanguage():? string
     {
         return $this->language;
     }
