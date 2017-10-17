@@ -2,12 +2,11 @@
 
 namespace vonZnotz\MtgDeckParser\Service\Deck;
 
-use vonZnotz\MtgDeckParser\UseCase\Deck\DeckItem;
 
 class DeckCollection implements \Iterator
 {
     /** @var DeckItem[] */
-    private $deckItems;
+    private $deckItems = [];
 
     /** @var int */
     private $current = 0;
@@ -34,7 +33,7 @@ class DeckCollection implements \Iterator
 
     public function valid()
     {
-        return true;
+        return count($this->deckItems) > $this->current;
     }
 
     public function rewind()
