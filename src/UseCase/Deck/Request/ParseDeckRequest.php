@@ -11,5 +11,21 @@ class ParseDeckRequest
      *
      * @var array
      */
-    private $collection;
+    private $postCollection;
+
+    /**
+     * @return array
+     */
+    public function getPostCollection(): array
+    {
+        return $this->postCollection;
+    }
+
+    /**
+     * @param array $postCollection
+     */
+    public function setPostCollection(array $postCollection)
+    {
+        $this->postCollection = $postCollection;
+    }
 }
