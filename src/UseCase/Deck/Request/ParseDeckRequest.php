@@ -2,30 +2,30 @@
 
 namespace vonZnotz\MtgDeckParser\UseCase\Deck\Request;
 
-use vonZnotz\MtgDeckParser\UseCase\Deck\DeckItem;
+use vonZnotz\MtgDeckParser\Service\Deck\DeckCollection;
 
 class ParseDeckRequest
 {
     /**
      * Should be anything, that could be identified as a deck
      *
-     * @var array
+     * @var DeckCollection
      */
-    private $postCollection;
+    private $collection;
 
     /**
-     * @return array
+     * @return DeckCollection
      */
-    public function getPostCollection(): array
+    public function getCollection(): DeckCollection
     {
-        return $this->postCollection;
+        return $this->collection;
     }
 
     /**
-     * @param array $postCollection
+     * @param DeckCollection $collection
      */
-    public function setPostCollection(array $postCollection)
+    public function setCollection(DeckCollection $collection)
     {
-        $this->postCollection = $postCollection;
+        $this->collection = $collection;
     }
 }
