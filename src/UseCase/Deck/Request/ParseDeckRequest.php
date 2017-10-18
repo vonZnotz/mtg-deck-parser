@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace vonZnotz\MtgDeckParser\UseCase\Deck\Request;
 
 use vonZnotz\MtgDeckParser\Service\Deck\DeckCollection;
