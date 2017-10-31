@@ -18,6 +18,11 @@ class DeckCollection implements \Iterator
         $this->deckItems[] = $deckItem;
     }
 
+    public function getDeckItem(int $offset):DeckItem
+    {
+        return $this->deckItems[$offset];
+    }
+
     public function current()
     {
         return $this->deckItems[$this->current];
