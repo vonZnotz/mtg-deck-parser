@@ -25,6 +25,10 @@ class CardDataUpdater
 
         $deckItem->setName($this->getCardName($html));
 
+        if ($deckItem->getAmount() === null) {
+            $deckItem->setAmount(1);
+        }
+
     }
 
     private function getCardName(string $html):string

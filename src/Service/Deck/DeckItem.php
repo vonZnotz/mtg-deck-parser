@@ -15,6 +15,9 @@ class DeckItem
     /** @var string */
     private $language;
 
+    /** @var int */
+    private $amount;
+
     /**
      * @return int
      */
@@ -61,5 +64,21 @@ class DeckItem
     public function setLanguage(string $language)
     {
         $this->language = $language;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAmount(): int
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param int $amount
+     */
+    public function setAmount(int $amount)
+    {
+        $this->amount = $amount;
     }
 }
