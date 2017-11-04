@@ -1,6 +1,6 @@
 <?php
 
-namespace vonZnotz\MtgDeckParser\Plugin;
+namespace vonZnotz\MtgDeckParser\Service\Cards;
 
 use vonZnotz\MtgDeckParser\Service\Deck\DeckItem;
 

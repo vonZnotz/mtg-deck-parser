@@ -69,7 +69,7 @@ class DeckItem
     /**
      * @return int
      */
-    public function getAmount(): int
+    public function getAmount():? int
     {
         return $this->amount;
     }

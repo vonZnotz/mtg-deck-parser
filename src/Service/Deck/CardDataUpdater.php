@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace vonZnotz\MtgDeckParser\Service\Deck;
 
-use vonZnotz\MtgDeckParser\Plugin\CardDataProviderInterface;
+use vonZnotz\MtgDeckParser\Service\Cards\CardDataProviderInterface;
 
 class CardDataUpdater
 {
