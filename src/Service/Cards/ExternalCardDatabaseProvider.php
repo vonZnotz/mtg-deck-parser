@@ -34,6 +34,24 @@ class ExternalCardDatabaseProvider implements ExternalCardDatabaseProviderInterf
 
     public function importDatabase()
     {
+        // mulitverseid.json
+        // 73937.json
+        $jsonContent = file_get_contents($this->targetDirectory . "/AllSets.json");
+        $data = json_decode($jsonContent);
+
+        foreach ($data as $setItem) {
+            $jsonCardData = new \stdClass();
+            $jsonCardData->set_name = $setItem->name;
+            $jsonCardData->set_code = $setItem->code;
+            foreach ($setItem->cards as $cardItem) {
+                $jsonCardData = (object) array_merge((array) $jsonCardData, (array) $cardItem);
+                if (!property_exists($cardItem, "multiverseid")) {
+                    continue;
+                }
+                file_put_contents($this->targetDirectory . "/cards/" . $cardItem->multiverseid . ".json", json_encode($jsonCardData));
+            }
+        }
+
         return true;
     }
 
