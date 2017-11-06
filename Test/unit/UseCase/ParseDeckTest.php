@@ -9,9 +9,9 @@ use vonZnotz\MtgDeckParser\Service\Cards\CardDataProvider;
 use vonZnotz\MtgDeckParser\Service\Deck\CardDataUpdater;
 use vonZnotz\MtgDeckParser\Service\Deck\DeckCollection;
 use vonZnotz\MtgDeckParser\Service\Deck\DeckItem;
-use vonZnotz\MtgDeckParser\UseCase\Deck\ParseDeck;
-use vonZnotz\MtgDeckParser\UseCase\Deck\Request\ParseDeckRequest;
-use vonZnotz\MtgDeckParser\UseCase\Deck\Response\ParseDeckResponse;
+use vonZnotz\MtgDeckParser\UseCase\ParseDeck;
+use vonZnotz\MtgDeckParser\UseCase\Request\ParseDeckRequest;
+use vonZnotz\MtgDeckParser\UseCase\Response\ParseDeckResponse;
 
 class ParseDeckTest extends TestCase
 {

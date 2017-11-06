@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vonZnotz\MtgDeckParser\UseCase\Deck\Response;
-
+namespace vonZnotz\MtgDeckParser\UseCase\Response;
 
 use vonZnotz\MtgDeckParser\Service\Deck\DeckCollection;
 

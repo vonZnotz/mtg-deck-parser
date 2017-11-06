@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace vonZnotz\MtgDeckParser\UseCase\Deck;
+namespace vonZnotz\MtgDeckParser\UseCase;
 
 use vonZnotz\MtgDeckParser\Service\Deck\CardDataUpdater;
-use vonZnotz\MtgDeckParser\UseCase\AbstractUseCase;
-use vonZnotz\MtgDeckParser\UseCase\Deck\Request\ParseDeckRequest;
-use vonZnotz\MtgDeckParser\UseCase\Deck\Response\ParseDeckResponse;
+use vonZnotz\MtgDeckParser\UseCase\Request\ParseDeckRequest;
+use vonZnotz\MtgDeckParser\UseCase\Response\ParseDeckResponse;
 
 class ParseDeck extends AbstractUseCase
 {
