@@ -11,6 +11,8 @@ namespace vonZnotz\MtgDeckParser\Test\UseCase\Deck\ParseDeck;
 use vonZnotz\MtgDeckParser\Service\Cards\ExternalCardDatabaseProvider;
 use vonZnotz\MtgDeckParser\UseCase\ImportCards;
 use PHPUnit\Framework\TestCase;
+use vonZnotz\MtgDeckParser\UseCase\Request\ImportCardsRequest;
+use vonZnotz\MtgDeckParser\UseCase\Response\ImportCardsResponse;
 
 class ImportCardsTest extends TestCase
 {
@@ -27,7 +29,10 @@ class ImportCardsTest extends TestCase
         }
 
         $importCardsUseCase = new ImportCards(new ExternalCardDatabaseProvider());
-        $importCardsUseCase->import();
+        $importCardsUseCase->run(
+            new ImportCardsRequest(),
+            new ImportCardsResponse()
+        );
         $this->assertTrue(file_exists($zipFilename));
         $this->assertTrue(file_exists($jsonFilename));
     }
