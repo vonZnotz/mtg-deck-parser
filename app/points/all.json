@@ -7,9 +7,11 @@
           "deckRestriction": 10,
           "symmetry": 10
         },
-        "cost": 10,
-        "deckRestriction": 10,
-        "symmetry": 10
+        "ffa": {
+          "cost": 10,
+          "deckRestriction": 10,
+          "symmetry": 10
+        }
       }
     }
   }

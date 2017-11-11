@@ -27,9 +27,9 @@ class CardValueProvider implements CardValueProviderInterface
 
     private function getDeckValue($pointItem): int
     {
-        $costValue = $pointItem->deckValue->commander->cost;
-        $deckRestrictionValue = $pointItem->deckValue->commander->deckRestriction;
-        $symmetryValue = $pointItem->deckValue->commander->symmetry;
+        $costValue = $pointItem->deckValue->commander->ffa->cost;
+        $deckRestrictionValue = $pointItem->deckValue->commander->ffa->deckRestriction;
+        $symmetryValue = $pointItem->deckValue->commander->ffa->symmetry;
 
         return ($costValue + $deckRestrictionValue + $symmetryValue) / 3;
     }
