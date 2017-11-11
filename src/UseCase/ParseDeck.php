@@ -22,6 +22,8 @@ class ParseDeck extends AbstractUseCase
     {
         $collection = $request->getCollection();
         $collection = $this->cardDataUpdater->update($collection);
+        $collection = $this->cardDataUpdater->updatePoints($collection);
+
 
         $response->setDeckCollection($collection);
 

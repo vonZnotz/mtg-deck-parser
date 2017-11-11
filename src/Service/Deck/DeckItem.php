@@ -18,6 +18,9 @@ class DeckItem
     /** @var int */
     private $amount;
 
+    /** @var int */
+    private $deckValue;
+
     /**
      * @return int
      */
@@ -80,5 +83,21 @@ class DeckItem
     public function setAmount(int $amount)
     {
         $this->amount = $amount;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDeckValue(): int
+    {
+        return $this->deckValue;
+    }
+
+    /**
+     * @param int $deckValue
+     */
+    public function setDeckValue(int $deckValue)
+    {
+        $this->deckValue = $deckValue;
     }
 }

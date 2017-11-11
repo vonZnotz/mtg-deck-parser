@@ -1,0 +1,16 @@
+{
+  "Default": {
+    "deckValue": {
+      "commander": {
+        "1v1": {
+          "cost": 0,
+          "deckRestriction": 0,
+          "symmetry": 0
+        },
+        "cost": 0,
+        "deckRestriction": 0,
+        "symmetry": 0
+      }
+    }
+  }
+}
