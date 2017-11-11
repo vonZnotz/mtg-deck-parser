@@ -1,0 +1,16 @@
+{
+  "Sol Ring": {
+    "deckValue": {
+      "commander": {
+        "1v1": {
+          "cost": 10,
+          "deckRestriction": 10,
+          "symmetry": 10
+        },
+        "cost": 10,
+        "deckRestriction": 10,
+        "symmetry": 10
+      }
+    }
+  }
+}
