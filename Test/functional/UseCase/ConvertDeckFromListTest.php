@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vonZnotz\MtgDeckParser\Test\UseCase\Deck\ParseDeck;
+namespace vonZnotz\MtgDeckParser\Test\functional\UseCase\Deck\ParseDeck;
 
 use PHPUnit\Framework\TestCase;
 use vonZnotz\MtgDeckParser\UseCase\ConvertDeckFromList;

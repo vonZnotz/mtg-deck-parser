@@ -1,6 +1,6 @@
 <?php
 
-namespace vonZnotz\MtgDeckParser\Test\UseCase\Deck\ParseDeck;
+namespace vonZnotz\MtgDeckParser\Test\functional\UseCase\Deck\ParseDeck;
 
 use vonZnotz\MtgDeckParser\Service\Cards\ExternalCardDatabaseProvider;
 use vonZnotz\MtgDeckParser\UseCase\ImportCards;
