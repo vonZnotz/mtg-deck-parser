@@ -4,7 +4,7 @@
 	bootstrap="../../vendor/autoload.php"
 	beStrictAboutCoversAnnotation="true"
 	beStrictAboutTodoAnnotatedTests="true"
-	verbose="true">
+	verbose="true">k
 	<testsuite>
 		<directory suffix="Test.php">UseCase</directory>
 	</testsuite>
