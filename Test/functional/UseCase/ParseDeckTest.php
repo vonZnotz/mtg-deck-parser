@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vonZnotz\MtgDeckParser\Test\UseCase\Deck\ParseDeck;
+namespace vonZnotz\MtgDeckParser\Test\functional\UseCase\Deck\ParseDeck;
 
 use PHPUnit\Framework\TestCase;
 use vonZnotz\MtgDeckParser\Service\Cards\CardDataProvider;
@@ -64,7 +64,10 @@ class ParseDeckTest extends TestCase
         $response->setDeckCollection($deckCollection);
 
         $parseDeckUseCase = new ParseDeck(
-            new CardDataUpdater(new CardDataProvider())
+            new CardDataUpdater(
+                new CardDataProvider(),
+                new CardValueProvider()
+            )
         );
         $response = $parseDeckUseCase->run($request, $response);
         $this->assertInstanceOf(DeckCollection::class, $response->getDeckCollection());
