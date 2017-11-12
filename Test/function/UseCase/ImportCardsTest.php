@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tneumann
- * Date: 11/4/17
- * Time: 9:35 PM
- */
 
 namespace vonZnotz\MtgDeckParser\Test\UseCase\Deck\ParseDeck;
 
